@@ -13,7 +13,10 @@ $maxSurfaceLevel: 3;
   --border-surface-3: #ededed;
 
   // Layout
-  --gutter-x: 2.4rem;
+  --gutter-x: .8rem;
+  @media (min-width: 768px) {
+    --gutter-x: 2.4rem;
+  }
   --max-content-width: 150rem;
 
   // Shadow
