@@ -1,0 +1,53 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-surface-1);
+  color: var(--on-surface-1);
+}
+
+.site-layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: [start] minmax(var(--gutter-x), 1fr) [content-start] minmax(auto, var(--max-content-width)) [content-end] minmax(var(--gutter-x), 1fr) [end];
+  min-height: 100dvh;
+  grid-template-rows: auto;
+  align-content: start;
+  padding-bottom: 8rem;
+
+  & > * {
+    grid-column: content-start / content-end;
+  }
+
+  & > .fluid {
+    grid-column: start / end;
+  }
+}
+
+:where(a) {
+  color: inherit;
+}
+
+:where(
+  button,
+  textarea,
+  input
+) {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+:where(button) {
+  cursor: pointer;
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+:where(svg) {
+  fill: currentColor;
+}

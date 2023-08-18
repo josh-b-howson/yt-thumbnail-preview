@@ -1,0 +1,55 @@
+$maxSurfaceLevel: 3;
+
+:root {
+  // Colors
+  --bg-surface-1: #eee;
+  --bg-surface-2: #f6f6f6;
+  --bg-surface-3: #fff;
+  --on-surface-1: #222;
+  --on-surface-2: #2a2a2a;
+  --on-surface-3: #303030;
+  --border-surface-1: #e0e0e0;
+  --border-surface-2: #e8e8e8;
+  --border-surface-3: #ededed;
+
+  // Layout
+  --gutter-x: 2.4rem;
+  --max-content-width: 150rem;
+
+  // Shadow
+  --shadow-surface-color: rgba(0, 0, 0, .075);
+  $val: .1rem;
+  @for $i from 1 through $maxSurfaceLevel {
+    --shadow-surface-#{$i}: 0 #{$val} #{$val} var(--shadow-surface-color);
+    $val: $val * 2;
+  }
+
+  // Border radius
+  $borderRadius: .1rem;
+  $maxBorderRadius: 6.4rem;
+  $borderRadiusIndex: 1;
+
+  @while $borderRadius <= $maxBorderRadius {
+    --radius-#{$borderRadiusIndex}: #{$borderRadius};
+    $borderRadius: $borderRadius * 2;
+    $borderRadiusIndex: $borderRadiusIndex + 1;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    // Colors
+    --bg-surface-1: #171717;
+    --bg-surface-2: #212121;
+    --bg-surface-3: #2a2a2a;
+    --on-surface-1: #bbb;
+    --on-surface-2: #e3e3e3;
+    --on-surface-3: #eee;
+    --border-surface-1: #222;
+    --border-surface-2: #303030;
+    --border-surface-3: #404040;
+
+    // Shadow
+    --shadow-surface-color: rgba(0, 0, 0, .2);
+  }
+}

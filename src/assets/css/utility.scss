@@ -1,0 +1,27 @@
+@mixin surface($level) {
+  background-color: var(--bg-surface-#{$level});
+  border: .1rem solid var(--border-surface-#{$level});
+  color: var(--on-surface-#{$level});
+  border-radius: var(--radius-#{$maxSurfaceLevel - $level + 4});
+}
+
+@for $i from 1 through $maxSurfaceLevel {
+  .surface-#{$i} {
+    @include surface($i);
+  }
+}
+
+@for $i from 1 through $maxSurfaceLevel {
+  .elevation-#{$i} {
+    @include surface($i);
+    box-shadow: var(--shadow-surface-#{$i});
+  }
+}
+
+@supports (resize: both) {
+  .resizeable {
+    resize: both;
+    overflow: auto;
+    border-bottom-right-radius: var(--radius-3);
+  }
+}

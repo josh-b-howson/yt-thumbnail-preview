@@ -1,0 +1,30 @@
+.button {
+  flex: 0 0 auto;
+  justify-self: start;
+  background-color: var(--on-surface-2);
+  color: var(--bg-surface-2);
+  border: .2rem solid transparent;
+  border-radius: .3em;
+  transition: 75ms ease;
+  padding: .7em 1em;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.6rem;
+
+  &:hover {
+    transform-origin: center;
+    background-color: var(--on-surface-3);
+    border-color: rgba(0, 0, 0, .2);
+    color: var(--bg-surface-3);
+  }
+
+  &:enabled:active {
+    transform: scale(.95);
+    transform-origin: bottom center;
+  }
+
+  &:disabled {
+    opacity: .3;
+    cursor: not-allowed !important;
+  }
+}
