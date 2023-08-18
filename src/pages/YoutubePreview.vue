@@ -203,7 +203,7 @@ watch(selectedCategory, async () => {
 
   @media (max-width: 768px) {
     --height: calc(70dvh);
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 
   h1 {
