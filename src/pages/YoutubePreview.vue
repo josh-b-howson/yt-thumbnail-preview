@@ -76,7 +76,10 @@ onMounted(async () => {
   youtubeCategories = youtubeCategories.filter(category => category.snippet.assignable)
   videoCategories.value = youtubeCategories
 
-  if (!userDidCreateVideo.value) document.body.style.overflow = 'hidden'
+  if (!userDidCreateVideo.value) {
+    document.body.style.overflow = 'hidden'
+    window.scrollTo(0, 0)
+  }
 })
 
 watch(() => userDidCreateVideo.value, (userDidCreateVideo) => {
