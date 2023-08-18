@@ -77,7 +77,7 @@ onMounted(async () => {
   videoCategories.value = youtubeCategories
 
   if (!userDidCreateVideo.value) {
-    document.body.style.overflow = 'hidden'
+    document.documentElement.style.overflow = 'hidden'
     window.scrollTo(0, 0)
   }
 })
