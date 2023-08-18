@@ -190,7 +190,10 @@ watch(selectedCategory, async () => {
   grid-column: 1 / -1;
   width: calc(100% - var(--gutter-x) * 2);
   max-width: calc(var(--max-content-width) + var(--x-tra) * 2);
-  background: linear-gradient(to bottom right, #FF0000, hsl(2, 64%, 40%));
+  --red-1: #f00000;
+  // p3 red
+  --red-1: color(display-p3 100 / 1);
+  background: linear-gradient(to bottom right, var(--red-1), hsl(2, 64%, 40%));
   color: #fff;
   padding: 0 var(--x-tra);
   height: var(--height);
