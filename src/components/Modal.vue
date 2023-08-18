@@ -73,7 +73,8 @@ watch(() => props.isOpen, (isOpen) => {
   width: 100%;
   max-width: 100vw;
   max-width: 100dvw;
-  height: 100%;
+  height: 100vh;
+  height: 100dvh;
   max-height: 100vh;
   max-height: 100dvh;
   padding: var(--gutter-x);
