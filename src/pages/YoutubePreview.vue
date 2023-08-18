@@ -202,7 +202,8 @@ watch(selectedCategory, async () => {
   gap: 1em;
 
   @media (max-width: 768px) {
-    --height: calc(60dvh);
+    --height: calc(70dvh);
+    font-size: 2.4rem;
   }
 
   h1 {
