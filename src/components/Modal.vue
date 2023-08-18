@@ -72,8 +72,10 @@ watch(() => props.isOpen, (isOpen) => {
   backdrop-filter: blur(4px);
   width: 100%;
   max-width: 100vw;
+  max-width: 100dvw;
   height: 100%;
   max-height: 100vh;
+  max-height: 100dvh;
   padding: var(--gutter-x);
   display: grid;
   place-items: center;
@@ -89,6 +91,7 @@ watch(() => props.isOpen, (isOpen) => {
     transition-duration: inherit;
     width: 100%;
     max-height: 100%;
+    max-height: 100dvh;
     max-width: 56rem;
     height: max-content;
     overflow: hidden;
