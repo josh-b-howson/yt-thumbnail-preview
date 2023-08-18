@@ -201,6 +201,10 @@ watch(selectedCategory, async () => {
   font-size: calc(1rem + .5vw);
   gap: 1em;
 
+  @media (max-width: 768px) {
+    --height: calc(60dvh);
+  }
+
   h1 {
     font-size: 2.4em
   }
