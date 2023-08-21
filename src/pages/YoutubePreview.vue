@@ -94,10 +94,10 @@ watch(selectedCategory, async () => {
 
 <template>
   <section :class="['hero', userDidCreateVideo && 'hidden']">
+    <Logo />
     <h1>YouTube thumbnail preview tool</h1>
     <p>Compare your thumbnail next to real videos in seconds.</p>
     <Button @click="uploadModalIsOpen = true">Get started</Button>
-    <Logo />
   </section>
   <section class="category-section">
     <h4>Video categories</h4>
