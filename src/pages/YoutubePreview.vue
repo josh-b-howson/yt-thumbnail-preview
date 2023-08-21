@@ -203,6 +203,7 @@ watch(selectedCategory, async () => {
   overflow: hidden;
   font-size: calc(1rem + .5vw);
   gap: 1em;
+  isolation: isolate;
 
   @media (max-width: 768px) {
     --height: calc(70dvh);
