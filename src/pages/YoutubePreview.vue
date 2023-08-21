@@ -209,6 +209,10 @@ watch(selectedCategory, async () => {
     font-size: 2rem;
   }
 
+  *:not(svg) {
+    z-index: 1;
+  }
+
   h1 {
     font-size: 2.4em
   }
