@@ -3,7 +3,6 @@ import styles from '@/assets/css/components/button.module.scss';
 
 type Props = {
   label: string;
-  // type for the `accept` attribute
   accept: HTMLInputElement['accept'];
 }
 
