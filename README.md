@@ -4,4 +4,6 @@ I sometimes make youtube videos so I made this for myself to see how my videos l
 
 Uses the Youtube Data API, Vue.js/with Vite.
 
-Test your video's thumbnail [here](https://yt-thumbnail-preview.joshhowson.com)
+Test your video's thumbnail [here](https://yt-thumbnail-preview.joshhowson.com).
+
+P.S. it has automatic light/dark theme preference support :)
