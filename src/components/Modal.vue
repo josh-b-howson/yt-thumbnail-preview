@@ -118,7 +118,7 @@ header {
 
 footer {
   flex: 0 0 auto;
-  grid-column: 1 / -1 !important;
+  grid-column: 1 / -1 !important; /* don't judge me, why are you looking here anyway??? */
   position: sticky;
   display: flex;
   align-items: center;
