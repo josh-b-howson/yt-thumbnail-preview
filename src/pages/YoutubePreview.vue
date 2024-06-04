@@ -208,6 +208,12 @@ watch(selectedCategory, async () => {
   @media (max-width: 768px) {
     --height: calc(70dvh);
     font-size: 2rem;
+    @media (max-height: 700px) {
+      font-size: 1.5rem;
+      min-height: min-content;
+      --height: unset;
+      padding-block: 3em;
+    }
   }
 
   *:not(svg) {
