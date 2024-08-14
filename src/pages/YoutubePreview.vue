@@ -286,13 +286,10 @@ watch(selectedCategory, async () => {
   gap: 1rem;
   margin-top: 1rem;
   overflow: auto;
+  scrollbar-width: thin;
   padding-bottom: 2rem;
   min-height: 5.1rem;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+
   button {
     flex: 0 0 auto;
   }
